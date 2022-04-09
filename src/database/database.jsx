@@ -10,6 +10,8 @@ export const PATIENTS = [
         problems: [
           { id: 1, description: "Dor no corazon" },
           { id: 2, description: "Perdir um amigasso" },
+          { id: 3, description: "Perdir um amigasso" },
+          { id: 4, description: "Perdir um amigasso" },
         ],
         situation: 1, //só pode ser 0 ou 1
         observation:

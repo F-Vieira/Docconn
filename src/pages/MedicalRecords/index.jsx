@@ -1,7 +1,7 @@
 import { useState } from "react";
-import MedicalRecordInfoFields from "../../components/MedicalRecordInfoFields";
+import Patient from "../../components/Patient";
+import Patients from "../../components/Patients";
 import * as MR from "./styles";
-import { PATIENTS } from "../../database/database";
 
 const MedicalRecords = () => {
   const [showPatientChart, setShowPatientChart] = useState(false);
@@ -15,34 +15,9 @@ const MedicalRecords = () => {
   return (
     <MR.Container>
       {showPatientChart ? (
-        <>
-          <h1>Prontuário</h1>
-          <p>Paciente: {patient.name}</p>
-          <p>Idade: {patient.age}</p>
-          <p>Sexo: {patient.sex}</p>
-
-          {patient.medicalRecords.map((medicalRecord) => (
-            <MedicalRecordInfoFields
-              key={medicalRecord.title}
-              title={medicalRecord.title}
-              problems={medicalRecord.problems}
-              situation={medicalRecord.situation}
-              observation={medicalRecord.observation}
-            />
-          ))}
-        </>
+        <Patient patient={patient} />
       ) : (
-        <>
-          <h1>Prontuários</h1>
-
-          <ul>
-            {PATIENTS.map((patient) => (
-              <li key={patient.id} onClick={() => handleShowPatient(patient)}>
-                <h2>{patient.name}</h2>
-              </li>
-            ))}
-          </ul>
-        </>
+        <Patients onClick={handleShowPatient} />
       )}
     </MR.Container>
   );
