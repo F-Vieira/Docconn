@@ -1,10 +1,6 @@
 import * as F from "./styles";
 
-const Form = ({ children }) => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
+const Form = ({ children, handleSubmit }) => {
   return <F.Container onSubmit={handleSubmit}>{children}</F.Container>;
 };
 

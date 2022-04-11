@@ -124,12 +124,12 @@ export const DOCTORS = [
     id: 1,
     name: "Chopper",
     email: "drum@mail.com",
-    senha: "1234",
+    password: "1234",
   },
   {
     id: 2,
     name: "Tsunade",
     email: "tsu@mail.com",
-    senha: "1234",
+    password: "1234",
   },
 ];
