@@ -7,11 +7,12 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <LP.Container>
+    <>
       <Header>
         <Button onClick={() => navigate("/login")}>Login</Button>
       </Header>
-    </LP.Container>
+      <LP.Container></LP.Container>
+    </>
   );
 };
 

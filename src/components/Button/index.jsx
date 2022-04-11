@@ -1,7 +1,11 @@
 import * as B from "./styles";
 
-const Button = ({ children, ...rest }) => {
-  return <B.Container {...rest}>{children}</B.Container>;
+const Button = ({ children, whiteMode, ...rest }) => {
+  return (
+    <B.Container {...rest} whiteMode={whiteMode}>
+      {children}
+    </B.Container>
+  );
 };
 
 export default Button;

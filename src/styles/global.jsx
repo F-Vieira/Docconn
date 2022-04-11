@@ -5,6 +5,7 @@ export default createGlobalStyle`
     --blue: #3B9EC8;
     --light_blue: #CDE7FF;
     --dark_blue: #283349;
+    --dark_blue_transparent: #28334970;
     --dark_green: #272D2D;
     --gray: #A39999;
     --white: #F2F2F2;
@@ -20,6 +21,10 @@ export default createGlobalStyle`
     outline: none;
     border: none;
     font-family: var(--primary_font);
+  }
+
+  body {
+    color: var(--dark_blue);
   }
 
   h1, h2, h3, h4 {
