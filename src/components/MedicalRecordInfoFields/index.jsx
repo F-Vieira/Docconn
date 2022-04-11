@@ -31,8 +31,10 @@ const MedicalRecordInfoFields = ({
       lastId = problems[problems.length - 1].id;
     }
 
-    const newProblem = { id: lastId + 1, ...data };
-    setProblems([...problems, newProblem]);
+    if (data.description.length > 0) {
+      const newProblem = { id: lastId + 1, ...data };
+      setProblems([...problems, newProblem]);
+    }
   };
 
   const handleRemoveProblem = (chosenProblem) => {
