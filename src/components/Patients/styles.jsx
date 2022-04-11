@@ -16,22 +16,39 @@ export const PatientsList = styled.ul`
 `;
 
 export const Patient = styled.li`
-  width: 150px;
+  width: 170px;
   height: 80px;
 
   margin: 10px;
+  padding: 10px;
 
-  background-color: var(--white);
-  box-shadow: 2px 5px 15px 2px rgba(39, 45, 45, 0.4);
+  border-radius: 4px;
+
+  background-color: var(--dark_blue);
+  color: var(--white);
+  box-shadow: 2px 5px 15px 2px var(--dark_blue_transparent);
+  border: 4px double var(--white);
 
   cursor: pointer;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+
+  position: relative;
 
   h2 {
-    font-size: 1.5.rem;
+    font-size: 1rem;
     font-weight: bold;
+  }
+
+  svg {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 0.2;
   }
 `;

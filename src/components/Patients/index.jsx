@@ -1,5 +1,6 @@
 import * as P from "./styles";
 import { PATIENTS } from "../../database/database";
+import { BsPersonFill } from "react-icons/bs";
 
 const Patients = ({ onClick }) => {
   return (
@@ -9,7 +10,10 @@ const Patients = ({ onClick }) => {
       <P.PatientsList>
         {PATIENTS.map((patient) => (
           <P.Patient key={patient.id} onClick={() => onClick(patient)}>
-            <h2>{patient.name}</h2>
+            <h2>Paciente: {patient.name}</h2>
+            <p>Idade: {patient.age}</p>
+            <p>Sexo: {patient.sex}</p>
+            <BsPersonFill />
           </P.Patient>
         ))}
       </P.PatientsList>
