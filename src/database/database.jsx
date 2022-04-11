@@ -9,9 +9,8 @@ export const PATIENTS = [
         title: "Subjetiva",
         problems: [
           { id: 1, description: "Dor no corazon" },
-          { id: 2, description: "Perdir um amigasso" },
-          { id: 3, description: "Perdir um amigasso" },
-          { id: 4, description: "Perdir um amigasso" },
+          { id: 2, description: "Dor na mente" },
+          { id: 3, description: "Dor na alma" },
         ],
         situation: 1, //só pode ser 0 ou 1
         observation:

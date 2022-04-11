@@ -33,7 +33,6 @@ export const Problems = styled.div`
 
   box-shadow: inset 0px 0px 5px 0px #000000;
   overflow: auto;
-
   h3 {
     font-size: 1.2rem;
     font-weight: 500;
@@ -52,7 +51,57 @@ export const Problems = styled.div`
 
       border-radius: 10px;
       background-color: var(--gray);
-      box-shadow: 5px 5px 5px 0px #000000;
+      box-shadow: 0px 1px 3px 1px #000000;
+
+      position: relative;
+    }
+
+    .add_problem {
+      height: 35px;
+      line-height: 35px;
+
+      padding: 0 10px;
+      margin: 10px 0;
+
+      border-radius: 10px;
+      background-color: var(--white);
+      box-shadow: 0px 1px 3px 1px #000000;
+
+      border: 2px dashed var(--gray);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      input {
+        width: calc(100% - 25px);
+        background-color: var(--white);
+      }
+
+      button {
+        width: 22px;
+        height: 22px;
+
+        svg {
+          width: inherit;
+          height: inherit;
+          color: var(--blue);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .remove_problem {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      width: 22px;
+      height: 22px;
+
+      color: var(--white);
+      cursor: pointer;
     }
   }
 `;

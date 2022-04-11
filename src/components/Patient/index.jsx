@@ -27,7 +27,7 @@ const Patient = ({ patient }) => {
         <MedicalRecordInfoFields
           key={medicalRecord.title}
           title={medicalRecord.title}
-          problems={medicalRecord.problems}
+          reportedProblems={medicalRecord.problems}
           situation={medicalRecord.situation}
           observation={medicalRecord.observation}
         />
