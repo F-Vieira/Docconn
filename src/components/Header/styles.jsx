@@ -13,4 +13,5 @@ export const Container = styled.header`
 
   position: fixed;
   width: 100%;
+  z-index: 2;
 `;

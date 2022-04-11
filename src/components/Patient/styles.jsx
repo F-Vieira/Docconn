@@ -12,7 +12,12 @@ export const Container = styled.section`
 
 export const PatientData = styled.div`
   width: 400px;
-  border: 4px double var(--gray);
+  border-radius: 4px;
+
+  background-color: var(--white);
+  border: 4px double var(--dark_blue);
+  box-shadow: 2px 5px 15px 2px var(--dark_blue_transparent);
+
   margin: 15px auto;
   padding: 15px;
 

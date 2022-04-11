@@ -21,6 +21,10 @@ const Patient = ({ patient }) => {
           <span>Sexo:</span>
           <span>{patient.sex}</span>
         </p>
+        <p>
+          <span>Médico:</span>
+          <span>Nome do médico</span>
+        </p>
       </P.PatientData>
 
       {patient.medicalRecords.map((medicalRecord) => (
