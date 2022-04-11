@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 200px;
   height: 120px;
+  border-radius: 4px;
 
   margin: 10px;
 
-  background-color: var(--white);
-  color: var(--dark_green);
-  box-shadow: 2px 5px 15px 2px rgba(39, 45, 45, 0.4);
+  background-color: var(--dark_blue);
+  color: var(--white);
+  box-shadow: 2px 5px 15px 2px var(--dark_blue_transparent);
 
   text-align: center;
 
@@ -18,7 +19,7 @@ export const Container = styled.div`
     align-items: center;
 
     height: 70px;
-    border-bottom: 2px solid var(--gray);
+    border-bottom: 2px solid var(--light_blue);
     padding: 0 10px;
 
     font-size: 18px;

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-  width: 100px;
+  min-width: 100px;
   height: 30px;
   border-radius: 4px;
+  padding: 0 10px;
 
   background-color: ${({ whiteMode }) => (whiteMode ? "#CDE7FF" : "#283349")};
   color: ${({ whiteMode }) => (whiteMode ? "#283349" : "#CDE7FF")};

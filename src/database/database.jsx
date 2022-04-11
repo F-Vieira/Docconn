@@ -125,11 +125,33 @@ export const DOCTORS = [
     name: "Chopper",
     email: "drum@mail.com",
     password: "1234",
+    patients: [
+      {
+        id: 1,
+        name: "Artorias",
+        age: 32,
+        sex: "Masculino",
+      },
+      {
+        id: 3,
+        name: "Ludwing",
+        age: 28,
+        sex: "Masculino",
+      },
+    ],
   },
   {
     id: 2,
     name: "Tsunade",
     email: "tsu@mail.com",
     password: "1234",
+    patients: [
+      {
+        id: 2,
+        name: "Maria",
+        age: 27,
+        sex: "Feminino",
+      },
+    ],
   },
 ];

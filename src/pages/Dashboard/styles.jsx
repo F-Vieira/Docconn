@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  height: calc(100vh - 100px);
-  padding: 5% 20%;
+  min-height: calc(100vh - 100px);
+  padding: 80px 20%;
   display: flex;
   flex-direction: column;
+
+  background-color: var(--light_blue);
 `;
 
 export const Indicators = styled.section`
@@ -26,7 +28,10 @@ export const Calls = styled.section`
       line-height: 30px;
       padding: 0 15px;
 
-      background-color: var(--white);
+      background-color: var(--dark_blue);
+      color: var(--white);
+      box-shadow: 0px 1px 3px 1px var(--dark_blue_transparent);
+
       border-radius: 10px;
       margin-bottom: 10px;
     }
