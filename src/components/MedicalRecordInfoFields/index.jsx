@@ -5,7 +5,7 @@ import {
   BsPlusSquareFill,
   BsFillTrashFill,
 } from "react-icons/bs";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const MedicalRecordInfoFields = ({
   title,

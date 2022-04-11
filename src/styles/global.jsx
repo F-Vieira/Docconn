@@ -8,6 +8,9 @@ export default createGlobalStyle`
     --dark_green: #272D2D;
     --gray: #A39999;
     --white: #F2F2F2;
+
+    --primary_font: 'Roboto', sans-serif;
+    --secundary_font: 'Beau Rivage', cursive;
   }
 
   * {
@@ -16,6 +19,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     outline: none;
     border: none;
+    font-family: var(--primary_font);
   }
 
   h1, h2, h3, h4 {
