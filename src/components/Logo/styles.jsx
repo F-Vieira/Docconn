@@ -7,4 +7,6 @@ export const Container = styled.h1`
   letter-spacing: 3px;
 
   color: var(--dark_blue);
+
+  cursor: pointer;
 `;

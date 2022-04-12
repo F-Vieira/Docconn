@@ -13,8 +13,7 @@ export const PATIENTS = [
           { id: 3, description: "Problema 3" },
         ],
         situation: 1, //só pode ser 0 ou 1
-        observation:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        observation: "",
       },
       {
         title: "Objetiva",
@@ -32,8 +31,7 @@ export const PATIENTS = [
           { id: 4, description: "Problema 4" },
         ],
         situation: 1, //só pode ser 0 ou 1
-        observation:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        observation: "",
       },
       {
         title: "Plano",

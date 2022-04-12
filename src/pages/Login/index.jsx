@@ -4,7 +4,7 @@ import Input from "../../components/Input";
 import * as L from "./styles";
 import Logo from "../../components/Logo";
 import { DOCTORS } from "../../database/database";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 import { Hypnosis } from "react-cssfx-loading";
@@ -50,6 +50,9 @@ const Login = () => {
               "Entrar"
             )}
           </Button>
+          <L.FormFooter>
+            É novo? <Link to="#">Cadastre-se</Link>
+          </L.FormFooter>
         </Form>
       </L.Container>
     </>

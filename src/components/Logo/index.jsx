@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import * as L from "./styles";
 
 const Logo = () => {
-  return <L.Container>Docconn</L.Container>;
+  const navigate = useNavigate();
+
+  return <L.Container onClick={() => navigate("/")}>Docconn</L.Container>;
 };
 
 export default Logo;

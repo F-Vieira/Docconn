@@ -32,3 +32,15 @@ export const Container = styled.main`
     }
   }
 `;
+
+export const FormFooter = styled.p`
+  color: var(--light_blue);
+
+  a {
+    color: var(--blue);
+
+    :hover {
+      text-decoration: underline;
+    }
+  }
+`;
