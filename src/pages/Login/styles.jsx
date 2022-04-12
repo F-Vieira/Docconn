@@ -18,4 +18,17 @@ export const Container = styled.main`
     font-weight: bold;
     color: var(--light_blue);
   }
+
+  .login_button {
+    position: relative;
+
+    .loading {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+
+      font-size: 8px;
+    }
+  }
 `;

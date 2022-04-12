@@ -5,9 +5,14 @@ import * as L from "./styles";
 import Logo from "../../components/Logo";
 import { DOCTORS } from "../../database/database";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+import { Hypnosis } from "react-cssfx-loading";
 
 const Login = () => {
   const navigate = useNavigate();
+
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,9 +26,11 @@ const Login = () => {
     );
 
     if (findDoctor) {
+      setLoading(true);
       setTimeout(() => {
         localStorage.setItem("@docconn:doctor", JSON.stringify(findDoctor));
         navigate("/dashboard");
+        setLoading(false);
       }, 3000);
     }
   };
@@ -36,8 +43,12 @@ const Login = () => {
           <h2 className="login_greeting">Seja Bem Vindo!</h2>
           <Input name="email" placeholder="E-mail" />
           <Input name="password" placeholder="Senha" type="password" />
-          <Button type="submit" whiteMode>
-            Entrar
+          <Button className="login_button" type="submit" whiteMode>
+            {loading ? (
+              <Hypnosis color="#3B9EC8" className="loading" />
+            ) : (
+              "Entrar"
+            )}
           </Button>
         </Form>
       </L.Container>

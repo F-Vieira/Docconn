@@ -8,9 +8,9 @@ export const PATIENTS = [
       {
         title: "Subjetiva",
         problems: [
-          { id: 1, description: "Dor no corazon" },
-          { id: 2, description: "Dor na mente" },
-          { id: 3, description: "Dor na alma" },
+          { id: 1, description: "Problema 1" },
+          { id: 2, description: "Problema 2" },
+          { id: 3, description: "Problema 3" },
         ],
         situation: 1, //só pode ser 0 ou 1
         observation:
@@ -18,14 +18,19 @@ export const PATIENTS = [
       },
       {
         title: "Objetiva",
-        problems: [{ id: 1, description: "Dor no braço" }],
+        problems: [{ id: 1, description: "Problema 1" }],
         situation: 0, //só pode ser 0 ou 1
         observation:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
       {
         title: "Avaliação",
-        problems: [{ id: 1, description: "super descrição" }],
+        problems: [
+          { id: 1, description: "Problema 1" },
+          { id: 2, description: "Problema 2" },
+          { id: 3, description: "Problema 3" },
+          { id: 4, description: "Problema 4" },
+        ],
         situation: 1, //só pode ser 0 ou 1
         observation:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -48,8 +53,8 @@ export const PATIENTS = [
       {
         title: "Subjetiva",
         problems: [
-          { id: 1, description: "Dor no corazon" },
-          { id: 2, description: "Perdir um amigasso" },
+          { id: 1, description: "Problema 1" },
+          { id: 2, description: "Problema 2" },
         ],
         situation: 1, //só pode ser 0 ou 1
         observation:
@@ -57,14 +62,14 @@ export const PATIENTS = [
       },
       {
         title: "Objetiva",
-        problems: [{ id: 1, description: "Dor no braço" }],
+        problems: [{ id: 1, description: "Problema 1" }],
         situation: 0, //só pode ser 0 ou 1
         observation:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
       {
         title: "Avaliação",
-        problems: [{ id: 1, description: "super descrição" }],
+        problems: [{ id: 1, description: "Problema 1" }],
         situation: 1, //só pode ser 0 ou 1
         observation:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -86,24 +91,21 @@ export const PATIENTS = [
     medicalRecords: [
       {
         title: "Subjetiva",
-        problems: [
-          { id: 1, description: "Dor no corazon" },
-          { id: 2, description: "Perdir um amigasso" },
-        ],
+        problems: [{ id: 1, description: "Problema 1" }],
         situation: 1, //só pode ser 0 ou 1
         observation:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
       {
         title: "Objetiva",
-        problems: [{ id: 1, description: "Dor no braço" }],
+        problems: [],
         situation: 0, //só pode ser 0 ou 1
         observation:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
       {
         title: "Avaliação",
-        problems: [{ id: 1, description: "super descrição" }],
+        problems: [],
         situation: 1, //só pode ser 0 ou 1
         observation:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
